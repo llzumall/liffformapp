@@ -66,9 +66,10 @@
 
         $(function () {
             $('form').submit(function () {
+                const name = "支出"
                 const category    = $('select[name="category"]').val();
                 const outlay = $('input[name="outlay"]').val();
-                const msg = `${category}\n${outlay}`;
+                const msg = `${name}\n${category}\n${outlay}`;
                 sendText(msg);
                 return false;
             });
